@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<body>
+
+<section class="date">
+    <h2>Aktualna data: <span class="current-date"></span></h2>
+</section>
+
+<h4 id="addTest">Dodaj książkę do bazy:</h4>
+
+<form id="book-form" action="" method="post" data-urlapi="" data-type="POST" data-contenttype="application/json">
+    <div class="form-group">
+        <label>ISBN:</label>
+        <input type="text" class="form-control" id="isbn" name="isbn" maxlength="13"><br>
+        <label>Tytuł:</label>
+        <input type="text" class="form-control" id="title" name="title"><br>
+        <label>Autor:</label>
+        <input type="text" class="form-control"  id="author" name="author"><br>
+        <label>Wydawca:</label>
+        <input type="text" class="form-control"  id="publisher" name="publisher"><br>
+        <label>Tematyka:</label>
+        <input type="text" class="form-control"  id="type" name="type">
+    </div>
+    <p>
+        <button class="btn btn-primary">Ddaj książkę</button>
+    </p>
+</form>
+
+<h4 id="getBooks" method="GET" data-urlapi="">Lista książek:</h4>
+
+<section class="books">
+    <ul>
+    </ul>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
